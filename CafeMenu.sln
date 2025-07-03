@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeMenu.Web", "CafeMenu.Web\CafeMenu.Web.csproj", "{3440E52C-25D8-4660-AFE4-AA3D93D3B16D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeMenu.Data", "CafeMenu.Data\CafeMenu.Data.csproj", "{417DF62B-5101-4F9B-8D9E-169FB4A43AE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3440E52C-25D8-4660-AFE4-AA3D93D3B16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3440E52C-25D8-4660-AFE4-AA3D93D3B16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3440E52C-25D8-4660-AFE4-AA3D93D3B16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3440E52C-25D8-4660-AFE4-AA3D93D3B16D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{417DF62B-5101-4F9B-8D9E-169FB4A43AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{417DF62B-5101-4F9B-8D9E-169FB4A43AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{417DF62B-5101-4F9B-8D9E-169FB4A43AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{417DF62B-5101-4F9B-8D9E-169FB4A43AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53B25F3C-EB05-4CD6-BD6D-B054F775B0ED}
+	EndGlobalSection
+EndGlobal
