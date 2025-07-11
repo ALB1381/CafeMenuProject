@@ -3,7 +3,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddSqlServer<CafeMenu.Data.Context.CafeContext>(
+    builder.Configuration.GetConnectionString("CafeMenuContext"));
+
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 //if (!app.Environment.IsDevelopment())

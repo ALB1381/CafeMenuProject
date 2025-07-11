@@ -22,8 +22,6 @@
   <ItemGroup>
     <Folder Include="Entities\Discount\" />
     <Folder Include="Entities\Warehouse\" />
-    <Folder Include="Entities\Order\" />
-    <Folder Include="Entities\Product\" />
   </ItemGroup>
 
 </Project>

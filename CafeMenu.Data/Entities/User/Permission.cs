@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeMenu.Data.Entities.User.Connections;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,5 +20,8 @@ namespace CafeMenu.Data.Entities.User
         [MinLength(3, ErrorMessage = "The {0} Should be More then {1}")]
         [Column(TypeName = "nvarchar(80)")]
         public string PermissionTitle { get; set; }
+
+
+        public List<RolePermissionConnection> RolePermissionConnections { get; set; }
     }
 }

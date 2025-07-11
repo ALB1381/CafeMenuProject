@@ -25,6 +25,11 @@ namespace CafeMenu.Data.Entities.User
         [Column(TypeName = "Tinyint")]
         [Range(1, 120, ErrorMessage = "The {0} Should be between {1} and {2}")]
         public int? Age { get; set; }
+
+        [Display(Name = "User Full Name")]
+        [MaxLength(50, ErrorMessage = "The {0} Should be less then {1}")]
+        [MinLength(3, ErrorMessage = "The {0} Should be More then {1}")]
+        [Column(TypeName = "nvarchar(50)")]
         public string? UseFullName { get; set; }
 
         [Display(Name = "Password")]
