@@ -13,20 +13,31 @@ namespace CafeMenu.Data.Entities.Product
         [Key]
         public int ProductId { get; set; }
 
+        [Display(Name = "Product Name")]
+        [Required(ErrorMessage = "Please enter the {0}")]
+        [MaxLength(50, ErrorMessage = "The {0} Should be less then {1}")]
+        [MinLength(2, ErrorMessage = "The {0} Should be More then {1}")]
+        [Column(TypeName = "nvarchar(50)")]
         public string ProductName { get; set; }
 
+        [Display(Name = "Product Description")]
+        [MaxLength(200, ErrorMessage = "The {0} Should be less then {1}")]
+        [Column(TypeName = "nvarchar(200)")]
         public string? ProductDescription { get; set; }
+
+
         public string? ProductIngredients { get; set; }
 
         public int ProductGroupId { get; set; }
 
-        public int ProductSubGroupId { get; set; }
+        public int? ProductSubGroupId { get; set; }
 
+
+        [Display(Name = "Product Image")]
+        [MaxLength(200, ErrorMessage = "The {0} Should be less then {1}")]
+        [Required(ErrorMessage = "Please enter the {0}")]
+        [Column(TypeName = "nvarchar(200)")]
         public string ProductImage { get; set; }
-
-
-
-
 
 
         [ForeignKey("ProductGroupId")]

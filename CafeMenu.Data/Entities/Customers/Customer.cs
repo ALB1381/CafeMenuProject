@@ -14,6 +14,7 @@ namespace CafeMenu.Data.Entities.Customers
     public class Customer
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int CustomerId { get; set; }
 
         [Display(Name = "User name")]
@@ -63,6 +64,6 @@ namespace CafeMenu.Data.Entities.Customers
         [ForeignKey("SexId")]
         public CustomerSex? Sex { get; set; }
 
-        public List<PhoneNumber> PhoneNumbers { get; set; }
+        public List<CustomerPhoneNumber> PhoneNumbers { get; set; }
     }
 }

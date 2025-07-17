@@ -6,11 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CafeMenu.Data.Entities.Order
+namespace CafeMenu.Data.Entities.Discount
 {
     public class OrderDiscount
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int DiscountId { get; set; }
 
 
@@ -20,13 +21,12 @@ namespace CafeMenu.Data.Entities.Order
         [Column(TypeName = "nvarchar(120)")]
         public string DiscountCode { get; set; }
 
-
         public int MaxCountOfUsage { get; set; }
 
         public DateOnly StartDate { get; set; }
         public DateOnly EndDate { get; set; }
 
-        public List<Order> Orders { get; set; }
+        public List<Order.Order> Orders { get; set; }
 
 
     }

@@ -13,6 +13,7 @@ namespace CafeMenu.Data.Entities.Order
     {
 
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int SubOrderId { get; set; }
 
         [Range(1,100)]

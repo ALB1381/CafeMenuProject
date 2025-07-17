@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace CafeMenu.Data.Entities.Customers
 {
-    public class PhoneNumber
+    public class CustomerPhoneNumber
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int PhoneId { get; set; }
 
         [Display(Name = "Phone number")]

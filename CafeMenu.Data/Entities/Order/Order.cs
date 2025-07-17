@@ -1,4 +1,5 @@
 ﻿using CafeMenu.Data.Entities.Customers;
+using CafeMenu.Data.Entities.Discount;
 using CafeMenu.Data.Entities.User;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace CafeMenu.Data.Entities.Order
     public class Order
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int OrderId { get; set; }
 
         
@@ -24,6 +26,10 @@ namespace CafeMenu.Data.Entities.Order
         public int? OrderTransportSum { get; set; }
         public int? TaxPrice { get; set; }
 
+        [Display(Name = "Order Description")]
+        [MaxLength(800, ErrorMessage = "The {0} Should be less then {1}")]
+        [MinLength(10, ErrorMessage = "The {0} Should be More then {1}")]
+        [Column(TypeName = "nvarchar(800)")]
         public string? OrderDescription { get; set; }
 
         [Display(Name = "Address")]
